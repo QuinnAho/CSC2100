@@ -13,7 +13,7 @@ int main()
 {
 
     int triSize;
-    cout << "Triangle App" << endl;
+    cout << "Triangle App!" << endl;
     cout << "---------------------" << endl;
 
     cout << "Enter the size of the triangles [3,4,5,6,7]: ";
