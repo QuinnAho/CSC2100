@@ -7,6 +7,7 @@ Header file
 */
 
 #include <string>
+#include <array>
 
 using namespace std;
 
