@@ -70,5 +70,15 @@ int main() {
     // Display updated date
     cout << "Updated first CSCdate: " << date.getDay() << "-" << date.getMonth() << "-" << date.getYear() << endl;
 
+    // Create a second CSCdate object and modify its date
+    CSCdate secondDate;
+    secondDate.setDay(18);
+    secondDate.setMonth(6);
+    secondDate.setYear(2021);
+
+    // Display the second date
+    cout << "Second CSCdate: " << secondDate.getDay() << "-" << secondDate.getMonthName() << "-" << secondDate.getYear() << endl;
+
     return 0;
 }
+
