@@ -6,20 +6,20 @@ class Employee
 
 private:
 
-string name;
-float salary;
+    string name;
+    float salary;
 
 public:
 
-void setName(string);
-string getName();
+    oid setName(string);
+    string getName();
 
-void setSalary(float);
-float getSalary();
+    void setSalary(float);
+    float getSalary();
 
-void PrintInfo();
+    void PrintInfo();
 
-Employee();
+    Employee();
 
-Employee(string n, float s);
+    Employee(string n, float s);
 };
