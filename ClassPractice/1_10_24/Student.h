@@ -24,4 +24,20 @@ public:
 
     void setMajor(const string& major);
     string getMajor() const;
+
+
+    //Constructors
+    //default constructor
+    //Constuctors never have a return type
+    
+    Student();
+
+    //Overloaded constructor
+    Student(string i, string n, string m, int y)
+    {
+        setID(i);
+        setName(n);
+        setMajor(m);
+        setYear(y);
+    };
 };

@@ -1,3 +1,11 @@
+/*
+Quinn Aho
+CSC 2100
+1/28/23
+Lab 3
+Employee.cpp
+*/
+
 #pragma once
 #include <string>
 #include <iostream>

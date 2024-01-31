@@ -1,3 +1,11 @@
+/*
+Quinn Aho
+CSC 2100
+1/28/23
+Lab 3
+Employee.cpp
+*/
+
 #include "Employee.h"
 
 void Employee::setName(string n)

@@ -44,10 +44,7 @@ void Student::PrintInfo() {
 }
 
 void Student::ChangeMajor(const string& newMajor) {
-    if {
 
-        
-    }
 }
 int main() {
     // Example usage
