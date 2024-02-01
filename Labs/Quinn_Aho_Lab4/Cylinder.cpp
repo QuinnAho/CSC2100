@@ -9,30 +9,29 @@ Cylinder.cpp
 */
 
 #include "Cylinder.h"
-#include <numbers> 
 
 void Cylinder::setHeight(float h) {
-
     if (h >= 0) {
         height = h;
-    } else {
-        height = 0;
     }
 }
 
-float Cylinder::getHeight() {
-
+float Cylinder::getHeight() const {
     return height;
 }
 
-float Cylinder::getArea const () {
-
-    return 2 * std::numbers::pi * getRadius() * height + 2 * std::numbers::pi * getRadius() * getRadius();
+float Cylinder::getArea() const {
+    return 2 * M_PI * getRadius() * (getRadius() + height);
 }
 
-float Cylinder::getVolume const () {
-
-    return std::numbers::pi * getRadius() * getRadius() * height;
+float Cylinder::getVolume() const {
+    return M_PI * getRadius() * getRadius() * height;
 }
 
-Cylinder::Cylinder(float r, float h) : Circle(r), height(h >= 0 ? h : 0) {}
+Cylinder::Cylinder(float r, float h) : Circle(r), height(h > 0 ? h : 0) {
+
+}
+
+Cylinder::Cylinder() : Circle(15), height(15) {
+
+}

@@ -8,31 +8,31 @@ Circle.cpp
 
 */
 
+
 #include "Circle.h"
-#include <numbers> 
 
 void Circle::setRadius(float r) {
-
     if (r >= 0) {
         radius = r;
-    } else {
-        radius = 0;
     }
 }
 
-float Circle::getRadius() {
-
+float Circle::getRadius() const {
     return radius;
 }
 
-float Circle::getPerimeter() {
-
-    return 2 * std::numbers::pi * radius;
+float Circle::getPerimeter() const {
+    return 2 * M_PI * radius;
 }
 
-float Circle::getArea() {
+float Circle::getArea() const {
+    return M_PI * radius * radius;
+}
+
+Circle::Circle(float r) {
+    setRadius(r);
+}
+
+Circle::Circle() : radius(5) {
     
-    return std::numbers::pi * radius * radius;
 }
-
-Circle::Circle(float r) : radius(r >= 0 ? r : 0) {}

@@ -11,19 +11,24 @@ Cylinder.h
 #pragma once
 
 #include "Circle.h"
+#include <cmath>
+#include <iostream>
 
 class Cylinder : public Circle {
+    
 private:
 
     float height;
 
 public:
 
-    Cylinder(float r = 0, float h = 0);
     void setHeight(float h);
-    float getHeight() const; 
-
-    float getArea(); 
+    float getHeight() const;
+    
+    float getArea() const override; 
     float getVolume() const;
-
+    
+    Cylinder(float r, float h);
+    Cylinder();
+    
 };

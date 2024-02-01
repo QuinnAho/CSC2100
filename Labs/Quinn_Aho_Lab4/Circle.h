@@ -10,20 +10,20 @@ Circle.h
 
 #pragma once
 
-class Circle
-{
+#include <iostream>
+#include <cmath>
 
+class Circle {
 private:
-
     float radius;
 
 public:
-
     void setRadius(float r);
-    float getRadius();
-
-    float getPerimeter() const;
-    float getArea() const;
-
-    explicit Circle(float r = 0);
+    float getRadius() const;
+    
+    virtual float getPerimeter() const;
+    virtual float getArea() const;
+    
+    explicit Circle(float r);
+    Circle();
 };

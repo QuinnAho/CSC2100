@@ -9,23 +9,27 @@ Main.cpp
 */
 
 #include "Cylinder.h"
-#include <iostream>
+
+using namespace std;
 
 int main() {
-    std::cout << "Cylinder App" << std::endl;
-    std::cout << "----------------" << std::endl;
+    cout << "Cylinder App!" << endl;
+    cout << "--------------------" << endl;
 
-    float radius, height;
-    std::cout << "Enter a radius: ";
-    std::cin >> radius;
+    Cylinder cylinder;
 
-    std::cout << "Enter a height: ";
-    std::cin >> height;
+    double radius, height;
 
-    Cylinder cylinder(radius, height);
+    cout << "Enter radius: ";
+    cin >> radius;
+    cylinder.setRadius(radius);
 
-    std::cout << "Cylinder area: " << cylinder.getArea() << std::endl;
-    std::cout << "Cylinder volume: " << cylinder.getVolume() << std::endl;
+    cout << "Enter height: ";
+    cin >> height;
+    cylinder.setHeight(height);
+
+    cout << "Cylinder area: " << cylinder.getArea() << endl;
+    cout << "Cylinder volume: " << cylinder.getVolume() << endl;
 
     return 0;
 }
