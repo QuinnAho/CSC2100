@@ -1,0 +1,6 @@
+﻿  Circle.cpp
+C:\Users\quinn.aho\Documents\School\CSC2100\Labs\Quinn_Aho_Lab8\ConsoleApplication1\ConsoleApplication1\Circle.cpp(28,26): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+  Square.cpp
+  Generating Code...
+  ConsoleApplication1.vcxproj -> C:\Users\quinn.aho\Documents\School\CSC2100\Labs\Quinn_Aho_Lab8\ConsoleApplication1\Debug\ConsoleApplication1.exe

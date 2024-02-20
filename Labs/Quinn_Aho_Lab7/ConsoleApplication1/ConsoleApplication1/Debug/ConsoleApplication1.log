@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  client.cpp
+  main.cpp
+  Generating Code...
+  ConsoleApplication1.vcxproj -> C:\Users\quinn.aho\Documents\School\CSC2100\Labs\Quinn_Aho_Lab7\ConsoleApplication1\Debug\Quinn_Aho_Lab7.exe
